@@ -32,6 +32,7 @@ https://blog.csdn.net/qq_38134913/article/details/101229085?utm_medium=distribut
       <router-view></router-view>
 </transition>
 
+
 .v-enter {
   opacity: 0;
   transform: translateX(100%);   //右进
@@ -48,7 +49,17 @@ https://blog.csdn.net/qq_38134913/article/details/101229085?utm_medium=distribut
   transition: all 0.5s ease;
 }
 
-
+### 图片列表
+1. 顶部滑动条，用的mui
+   1. 用的tab-top-webview-main.html, 
+   2. 会占满全屏，去掉mui-fullscreen
+   3. 不滚动，需要手动初始化scroll 控件
+   + 导入mui js
+   + 需要关闭严格模式
+   + 底底tab点不动，注释mui.js后可以点动。JS和底部tab类名冲突
+     解决方法，把底部tab的类名改下
+2. 别人推荐移动端用vant，好吧。我去看下vant.
+   
 
 ## Project setup
 ```

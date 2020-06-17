@@ -15,7 +15,7 @@ import ShopcarContainer from '../components/tabbar/ShopcarContainer.vue'
 import SearchContainer from '../components/tabbar/SearchContainer.vue'
 import NewsList from '../components/news/NewsList.vue'
 // import NewsInfo from './components/news/NewsInfo.vue'
-// import PhotoList from './components/photos/PhotoList.vue'
+import PhotoList from '../components/photos/PhotoList.vue'
 // import PhotoInfo from './components/photos/PhotoInfo.vue'
 // import GoodsList from './components/goods/GoodsList.vue'
 // import GoodsInfo from './components/goods/GoodsInfo.vue'
@@ -31,7 +31,8 @@ const routes = [
   { path: '/member', component: MemberContainer },
   { path: '/shopcar', component: ShopcarContainer },
   { path: '/search', component: SearchContainer },
-  { path: '/home/newslist', component: NewsList }
+  { path: '/home/newslist', component: NewsList },
+  { path: '/home/photolist', component: PhotoList }
 ]
 
 const router = new VueRouter({
