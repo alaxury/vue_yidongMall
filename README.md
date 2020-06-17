@@ -19,6 +19,35 @@ import './lib/mui/css/icons-extra.css'
 
 3. header用的mint ui, tabbar用的mui
 
+### 轮播图
+1. 给swiper加高度
+2. 用require()包裹路径之后，图片才可以显示！
+https://blog.csdn.net/qq_38134913/article/details/101229085?utm_medium=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase
+
+### 九宫格
+用的mui
+
+### 动画
+<transition>
+      <router-view></router-view>
+</transition>
+
+.v-enter {
+  opacity: 0;
+  transform: translateX(100%);   //右进
+}
+
+.v-leave-to {
+  opacity: 0;
+  transform: translateX(-100%);    //右进左出
+  position: absolute;   // 这个得加     
+}
+
+.v-enter-active,
+.v-leave-active {
+  transition: all 0.5s ease;
+}
+
 
 
 ## Project setup
